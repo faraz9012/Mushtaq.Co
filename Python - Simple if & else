@@ -1,0 +1,10 @@
+fruit = input ("Choose a fruit.")
+
+if (fruit == "Apple"):
+    print ("An apple a day, keeps the Dr. away.")
+elif (fruit == "Banana"):
+    print ("Minions love banana.")
+elif (fruit == "Orange"):
+    print ("Orange is a good source of vitamin C.")
+else:
+    print ("Eat healthy, live healthy.")
