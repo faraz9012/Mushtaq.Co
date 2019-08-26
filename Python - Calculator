@@ -1,0 +1,30 @@
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):    
+    return a*b
+def div(a,b):
+    return a/b
+def expo(a,b):
+    return a**b
+
+
+print("------Calculator------")
+print ("From the options below choose what you want to do.")
+choice = input("1.Add 2.Sub 3.Mul 4.Div 5.Exponent ")
+num1 =  int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+if (choice == '1'):
+    print("Answer is: "); print(add(num1,num2))
+elif (choice == '2'):
+    print ("Answer is: "); print(sub(num1,num2))
+elif (choice == '3'):
+    print ("Answer is: "); print(mul(num1,num2))
+elif (choice == '4'):
+    print ("Answer is: "); print(div(num1,num2))
+elif (choice == '5'):
+    print ("Answer is: "); print(expo(num1,num2))   
+else: 
+    print("No such option available.")
