@@ -1,0 +1,5 @@
+test_tuple = ("FARAZ ", "ARIF ", "Python")
+statement = "This is a tuple: "
+
+print (test_tuple[0])
+print (statement+test_tuple[2])
