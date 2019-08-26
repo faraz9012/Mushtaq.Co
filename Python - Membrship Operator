@@ -1,0 +1,10 @@
+name = "MY NAME IS FARAZ ARIF"
+numbers = {22:'a',3:'b',99:'c'}
+
+print('Y' in name)
+print('X' in name)
+print('hello' in name)
+print(1 in numbers)
+print('a' in numbers)
+print(99 in numbers)
+print('b' in numbers)
