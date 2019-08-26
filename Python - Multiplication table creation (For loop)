@@ -1,0 +1,7 @@
+print("Table Creation.")
+
+num = int(input("Enter number to generate table: "))
+
+for i in range (1,11):
+    product = num*i
+    print (num,' x ',i,' = ',product)
