@@ -1,0 +1,4 @@
+dict = {'Name': 'Faraz', 'Age': 23, 'Designation': 'Developer.'}
+print (dict['Name'])
+print ("dict['Age']: ", dict['Age'])
+print (dict['Designation'])
