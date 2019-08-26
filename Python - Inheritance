@@ -1,0 +1,15 @@
+class Car:
+    def __init__(self, car_Name, car_model,car_color):
+        self.car_Name = car_Name
+        self.car_model = car_model
+        self.car_color = car_color
+    
+    def printInfo(self):
+        print (self.car_Name, self.car_model, self.car_color)
+
+a = Car("Audi ","2019 ","Black.")
+a.printInfo()
+b = Car("BMW "," 2019 ","Pearl White.")
+b.printInfo()
+c = Car("Tesla ", "2013 ","White.")
+c.printInfo()
