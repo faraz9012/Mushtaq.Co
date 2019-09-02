@@ -1,0 +1,38 @@
+#django Code:
+
+pip install django
+django-admin startproject mysite
+cd mysite
+python manage.py startapp myapp
+python manage.py migrate
+mkdir templates
+vi index.html
+
+
+
+#in the settings directory (mysite)
+
+'myapp' //INSTALLED_APPS =[]
+
+
+
+#in the urls directory (mysite)
+
+
+
+from django.contrib import admin
+from django.urls import path
+from myapp import views as v
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', v.index)
+]
+
+
+#in the views directory (mysite)
+
+from django.shortcuts import render, render_to_response
+
+# Create your views here.
+def index(request):
+    return  render_to_response('index.html')
