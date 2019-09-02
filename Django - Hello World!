@@ -1,0 +1,45 @@
+#Django Code.
+
+pip install django
+django-admin startproject DEMOPROJECT
+cd DEMOPROJECT
+python manage.py runserver
+http://127.0.0.1:8000/  // This is the ip of the development server.
+python manage.py startapp DEMOAPP
+
+
+
+#In the settings directory 
+
+ALLOWED_HOSTS = ['*']
+
+
+
+#In the view drectory
+
+from django.http import HttpResponse
+def index (request):
+    return HttpResponse("Hello World!. You're at the polls index.")
+
+
+#In the urls directory of mysite
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('polls/', include('polls.urls')),
+]
+
+
+
+#Add a new sub-directory urls in the polls directory.
+
+from django.urls import path
+from . import views
+
+urlpatterns = {
+
+    path ('', views.index, name='index'),
+}
