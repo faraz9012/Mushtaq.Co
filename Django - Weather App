@@ -1,0 +1,39 @@
+#Django Code.
+
+pip install django
+django-admin startproject the_weather
+cd the_weather
+python manage.py startapp weather
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+
+
+#In the settings directory of the_weather
+
+'weather' //In the INSTALLED_APPS =[]
+
+
+
+#In the urls directory of the_weather
+
+
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('weather.urls')),
+]
+
+
+
+#In the view directory
+
+from django.shortcuts import render
+
+# Create your views here.
+def index(request):
+    return  render(request, 'weather/.html')
